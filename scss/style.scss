@@ -1,0 +1,216 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+$font-white:#FFFFFF;
+$font-gray: #48555B;
+%font-main-title{
+    font-size: 20px;
+    line-height: 25px;
+    color: $font-white;
+    font-family: BebasNeueBold;
+    letter-spacing: 5.70937px;
+}
+%font-scroll{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 15px;
+    color: $font-white;
+    letter-spacing: 3.7px;
+}
+%font-menu{
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    font-style: normal;
+    color: $font-gray;
+    letter-spacing: 1.09091px;
+}
+%font-title{
+    color:$font-gray;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 2.30625px;
+}
+%link-active{
+    color: #00A4E5;
+}
+%font-bold-title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    color: $font-gray;
+}
+%font-story{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: $font-gray;
+    letter-spacing: 0.1875px;
+}
+%font-story-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+    color: $font-gray;
+    letter-spacing: 0.1875px;
+}
+%font-capabilities{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: $font-gray;
+    letter-spacing: 0.426667px;
+}
+%font-capabilities-text{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 23px;
+    color: $font-gray;
+    letter-spacing: 0.1875px;
+}
+%font-box{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: 0.1875px;
+    color: $font-white
+}
+%container {
+    margin: 0 auto;
+    max-width: 941px;
+    width: 100%;
+}
+%container-fluid{
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.header {
+    @extend %container-fluid;
+    height: 770px;
+    background-image: url(/img/bg__header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    .header__logo {
+        display: flex;
+        justify-content: center;
+        padding-top: 40px;
+        img{
+        width: 101px;
+        height: 23px;
+        }
+    }
+    .header__title{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 300px;
+        padding-bottom: 221px;
+        @extend %font-main-title;
+    }
+    .header__scroll-down{
+        text-align: center;
+        margin-top: auto;
+        padding-bottom: 71px;
+        @extend %font-scroll;
+    }
+}
+.container {
+    @extend %container;
+    .nav__logo{
+        margin: auto;
+        padding-right: 286px;
+        margin-bottom: 23px;
+    }
+    .nav__menu{
+        display: flex;
+        justify-content: flex-end;
+        
+        .nav__menu-item{
+            padding: 25px 24px;
+            @extend %font-menu;
+            text-decoration: none;
+            &:hover{
+                @extend %link-active;
+            }
+        }
+    }
+}
+.container-menu{
+    width: 100%;
+    border: 1px solid #E6E6E6;
+}
+.story{
+    .story__title{
+        text-align: center;
+        @extend %font-title;
+        padding-top: 57px;
+        padding-bottom: 110px;
+    }
+    .story__line {
+        border: 1px solid #00A4E5;
+        margin: 10px auto;
+        max-width: 50px;
+    }
+    .story__inner {
+        display: flex;
+        justify-content: space-between;
+        .story__left{
+            padding-right: 88px;
+            .story__text{
+                @extend %font-story;
+                .story__text--blue{
+                    color: #00A4E5;
+                }
+            }
+            .story__subtext{
+                @extend %font-story-text;
+            }
+        }
+        .story__right{
+            max-width: 440px;
+            display: flex;
+            justify-content: space-between;
+            .story__right-plan{
+                background-image: url(/img/we-plan.jpg);
+                width: 140px;
+                height: 224px;
+            }
+            .story__right-manage{
+                background-image: url(/img/we-manage.jpg);
+                width: 140px;
+                height: 224px;
+                margin: 0 20px;
+            }
+            .story__right-build{
+                background-image: url(/img/we-build.jpg);
+                width: 140px;
+                height: 224px;
+            }
+            .story__right-description{
+                padding-left: 14px;
+                @extend %font-box;
+            }
+        }
+        .story__left{
+            max-width: 440px;
+        }
+    }
+}
