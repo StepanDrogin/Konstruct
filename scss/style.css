@@ -1,9 +1,3 @@
-body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 .header .header__title {
   font-size: 20px;
   line-height: 25px;
@@ -31,7 +25,7 @@ body {
   letter-spacing: 1.09091px;
 }
 
-.story .story__title {
+.story .story__title, .capabilities .capabilities__top .capabilities__title {
   color: #48555B;
   font-style: normal;
   font-weight: bold;
@@ -44,7 +38,7 @@ body {
   color: #00A4E5;
 }
 
-.story .story__inner .story__left .story__text {
+.story .story__inner .story__left .story__text, .capabilities .capabilities__bottom .capabilities__bottom-box .capabilities__bottom-name {
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
@@ -53,13 +47,22 @@ body {
   letter-spacing: 0.1875px;
 }
 
-.story .story__inner .story__left .story__subtext {
+.story .story__inner .story__left .story__subtext, .capabilities .capabilities__bottom .capabilities__bottom-box .capabilities__bottom-text {
   font-style: normal;
   font-weight: normal;
   font-size: 13px;
   line-height: 23px;
   color: #48555B;
   letter-spacing: 0.1875px;
+}
+
+.capabilities .capabilities__top .capabilities__text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #48555B;
+  letter-spacing: 0.426667px;
 }
 
 .story .story__inner .story__right .story__right-description {
@@ -72,6 +75,47 @@ body {
   color: #FFFFFF;
 }
 
+.capabilities .capabilities__top .capabilities__text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+}
+
+.capabilities .capabilities__top .capabilities__btn {
+  width: 150px;
+  height: 37px;
+  background-color: #00A4E5;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+  border: #FFFFFF;
+  margin-top: 10px;
+}
+
+.work .something-amazing {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
+
+.work__signup-flex .work__signup {
+  letter-spacing: 0.846154px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+}
+
 .container {
   margin: 0 auto;
   max-width: 941px;
@@ -81,6 +125,18 @@ body {
 .header {
   width: 100%;
   margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .header {
@@ -179,4 +235,107 @@ body {
 }
 .story .story__inner .story__left {
   max-width: 440px;
+}
+
+.capabilities .capabilities__top {
+  display: flex;
+  justify-content: space-between;
+  padding: 119px 0 78px;
+  max-height: 40px;
+}
+.capabilities .capabilities__top .capabilities__title {
+  white-space: nowrap;
+}
+.capabilities .capabilities__top .capabilities__title .capabilities__line {
+  border: 1px solid #00A4E5;
+  max-width: 50px;
+  max-height: 25px;
+  margin-top: 7px;
+}
+.capabilities .capabilities__top .capabilities__text {
+  max-width: 36%;
+}
+.capabilities .capabilities__bottom {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-basis: 31%;
+  margin-bottom: 115px;
+}
+.capabilities .capabilities__bottom .capabilities__bottom-box {
+  border: 1px solid #E6E6E6;
+  max-width: 295px;
+  margin: 0px 10.5px;
+}
+.capabilities .capabilities__bottom .capabilities__bottom-box img {
+  padding: 38px 23px;
+}
+.capabilities .capabilities__bottom .capabilities__bottom-box .capabilities__bottom-name {
+  padding: 0px 23px 13px;
+  width: 250px;
+  height: 48px;
+}
+.capabilities .capabilities__bottom .capabilities__bottom-box .capabilities__bottom-text {
+  padding: 0px 23px 15px;
+}
+
+.work {
+  background-image: url(/img/bg__button.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 499px;
+}
+.work .something-amazing {
+  color: #48555B;
+  text-align: center;
+  padding: 120px 0 10px;
+}
+.work .work__bg {
+  display: flex;
+  flex-direction: column;
+}
+.work .work__btn {
+  width: 150px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: #00A4E5;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+  border: #FFFFFF;
+}
+
+.work__signup-flex {
+  display: flex;
+  justify-content: center;
+  background-color: #171819;
+  margin: 0 auto;
+}
+.work__signup-flex .work__signup {
+  color: #FFFFFF;
+}
+.work__signup-flex .work__signup-area {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 70px;
+  margin-right: 0px;
+  margin-bottom: 30px;
+}
+.work__signup-flex .work__signup-area .work__signup--email input {
+  width: 250px;
+  height: 32px;
+}
+.work__signup-flex .work__signup-area .work__signup--blue-btn button {
+  width: 150px;
+  height: 37px;
+  background-color: #00A4E5;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  color: #FFFFFF;
+  border: #FFFFFF;
 }

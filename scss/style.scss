@@ -1,8 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 $font-white:#FFFFFF;
 $font-gray: #48555B;
 %font-main-title{
@@ -88,6 +83,43 @@ $font-gray: #48555B;
     letter-spacing: 0.1875px;
     color: $font-white
 }
+%font-capabilities {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 19px;
+    letter-spacing: 0.2px;
+}
+%cabilities-btn {
+    width: 150px;
+    height: 37px;
+    background-color: #00A4E5;;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 18px;
+    color: $font-white;
+    border:#FFFFFF;
+    margin-top:10px;
+}
+%font-amazing{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: 0.15px;
+}
+%font-work{
+    letter-spacing: 0.846154px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+}
 %container {
     margin: 0 auto;
     max-width: 941px;
@@ -97,8 +129,16 @@ $font-gray: #48555B;
     width: 100%;
     margin: 0 auto;
 }
-
-
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
 .header {
     @extend %container-fluid;
     height: 770px;
@@ -213,4 +253,115 @@ $font-gray: #48555B;
             max-width: 440px;
         }
     }
+}
+.capabilities{
+    .capabilities__top{
+        display: flex;
+        justify-content: space-between;
+        padding: 119px 0 78px;
+        max-height: 40px;
+        .capabilities__title{
+            @extend %font-title;
+            white-space: nowrap;
+            .capabilities__line{
+                border: 1px solid #00A4E5;
+                max-width: 50px;
+                max-height: 25px;
+                margin-top: 7px;
+            }
+        }
+        .capabilities__text{
+            @extend %font-capabilities;
+            max-width: 36%;
+        }
+        .capabilities__btn{
+            @extend %cabilities-btn;
+        }  
+    }
+    .capabilities__bottom{
+        display: flex;
+        /* justify-content: space-between; */
+        flex-basis: 31%;
+        margin-bottom: 115px;
+        .capabilities__bottom-box{
+            border: 1px solid #E6E6E6;
+            max-width: 295px;
+            margin: 0px 10.5px;
+            img{
+                padding: 38px 23px;
+            }
+            .capabilities__bottom-name{
+                padding:0px 23px 13px;
+                width: 250px;
+                height: 48px;
+                @extend %font-story;
+            }
+            .capabilities__bottom-text{
+                padding:0px 23px 15px;
+                @extend %font-story-text;
+            }
+        }
+    }
+}
+.work {
+    background-image: url(/img/bg__button.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 499px;
+    .something-amazing{
+        @extend %font-amazing;
+        color: $font-gray;
+        text-align: center;
+        padding: 120px 0 10px;
+    }
+    .work__bg {
+        display: flex;
+        flex-direction: column;
+    }
+    .work__btn{
+        width: 150px;
+        height: 40px;
+        margin: 0 auto;
+        background-color: #00A4E5;;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 18px;
+        color: $font-white;
+        border:#FFFFFF;
+    }
+    }
+    .work__signup-flex{
+        display: flex;
+        justify-content: center;
+        background-color: #171819;
+        margin: 0 auto;
+        .work__signup{
+            @extend %font-work;
+            color: $font-white;
+        }
+        .work__signup-area{
+            display: flex;
+            margin-top: 30px;
+            margin-left: 70px;
+            margin-right: 0px;
+            margin-bottom: 30px;
+            .work__signup--email input{
+                width: 250px;
+                height: 32px;
+            }
+            .work__signup--blue-btn button{
+                width: 150px;
+                height: 37px;
+                background-color: #00A4E5;;
+                font-family: Open Sans;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 13px;
+                line-height: 18px;
+                color: $font-white;
+                border:#FFFFFF;
+            }
+}
 }
