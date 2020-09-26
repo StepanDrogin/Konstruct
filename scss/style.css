@@ -107,6 +107,15 @@
   letter-spacing: 0.15px;
 }
 
+.work__signup-flex .work__signup {
+  letter-spacing: 0.846154px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 30px;
+}
+
 .container {
   margin: 0 auto;
   max-width: 941px;
@@ -298,4 +307,38 @@ html {
   line-height: 18px;
   color: #ffffff;
   border: #ffffff;
+  margin-bottom: 232px;
+}
+
+.work__signup-flex {
+  display: flex;
+  justify-content: center;
+  background-color: #171819;
+  margin: 0 auto;
+}
+.work__signup-flex .work__signup {
+  color: #ffffff;
+}
+.work__signup-flex .work__signup-area {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 70px;
+  margin-right: 0px;
+  margin-bottom: 30px;
+}
+.work__signup-flex .work__signup-area .work__signup--email input {
+  width: 250px;
+  height: 32px;
+}
+.work__signup-flex .work__signup-area .work__signup--blue-btn button {
+  width: 150px;
+  height: 37px;
+  background-color: #00A4E5;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  border: #FFFFFF;
 }
