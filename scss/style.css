@@ -161,7 +161,7 @@ html {
 
 .header {
   height: 770px;
-  background-image: url(/img/bg__header.jpg);
+  background-image: url(../img/bg__header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
@@ -235,18 +235,18 @@ html {
   justify-content: space-between;
 }
 .story .story__inner .story__right .story__right-plan {
-  background-image: url(/img/we-plan.jpg);
+  background-image: url(../img/we-plan.jpg);
   width: 140px;
   height: 224px;
 }
 .story .story__inner .story__right .story__right-manage {
-  background-image: url(/img/we-manage.jpg);
+  background-image: url(../img/we-manage.jpg);
   width: 140px;
   height: 224px;
   margin: 0 20px;
 }
 .story .story__inner .story__right .story__right-build {
-  background-image: url(/img/we-build.jpg);
+  background-image: url(../img/we-build.jpg);
   width: 140px;
   height: 224px;
 }
@@ -303,7 +303,7 @@ html {
 
 .container-git {
   /* @extend %container-fluid; */
-  background-image: url(/img/bg__button.jpg);
+  background-image: url(../img/bg__button.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 70vh;
