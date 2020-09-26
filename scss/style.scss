@@ -120,6 +120,24 @@ $font-gray: #48555b;
   font-size: 22px;
   line-height: 30px;
 }
+%font-contacts{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    letter-spacing: 0.846154px;
+    color: $font-white;
+}
+%font-contacts-links{
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 0.846154px;
+    color: $font-white;
+}
 %container {
   margin: 0 auto;
   max-width: 941px;
@@ -350,6 +368,7 @@ html {
         margin-left: 70px;
         margin-right: 0px;
         margin-bottom: 30px;
+        padding-bottom: 30px;
         .work__signup--email input{
             width: 250px;
             height: 32px;
@@ -367,4 +386,87 @@ html {
             border:#FFFFFF;
         }
 }
+}
+.container-contacts{
+    margin:-21px auto;
+    width: 100%;
+    background-color: #141A20;
+    .contacts{
+        @extend %container;
+        padding: 42px;
+        display: flex;
+        .contacts__logo-col{
+
+            .contacts__logo-name{
+                @extend %font-contacts;
+            }
+            .contacts__logo img{
+                width: 101px;
+                height: 23px;
+                padding: 10px 0 10px;
+            }
+            .contacts__logo-text{
+                @extend %font-contacts;
+                max-width: 250px;
+            }
+        }
+        .contacts__links-1{
+            margin-top: 2px;
+            ul{
+                list-style: none;
+                @extend %font-contacts;
+                li{
+                @extend %font-contacts-links;
+                }
+            }
+        }
+        .contacts__links-2{
+            margin-top: 17px;
+            ul{
+                list-style: none;
+                @extend %font-contacts;
+                li{
+                @extend %font-contacts-links;
+                }
+            }
+        }
+        .contacts__links-3{
+            margin-top: 17px;
+            ul{
+                list-style: none;
+                @extend %font-contacts;
+                li{
+                @extend %font-contacts-links;
+                }
+            }
+        }
+        .contacts__links-info{
+            @extend %font-contacts;
+            padding-left: 58px;
+            padding-right: 80px;
+        }
+        .contacts__link-sm{
+            padding:22px 12.5px;
+        }
+    }
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: none;
+    text-decoration-line: none;
+    text-decoration-style: initial;
+    text-decoration-color: initial;
+}
+.footer{
+    background-color: #171819;
+    min-height: 60px;
+    .footer__copyright{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .footer__copyright-text{
+            @extend %font-contacts;
+        }
+    }
 }

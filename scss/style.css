@@ -116,7 +116,27 @@
   line-height: 30px;
 }
 
-.container {
+.container-contacts .contacts .contacts__logo-col .contacts__logo-name, .container-contacts .contacts .contacts__logo-col .contacts__logo-text, .container-contacts .contacts .contacts__links-1 ul, .container-contacts .contacts .contacts__links-2 ul, .container-contacts .contacts .contacts__links-3 ul, .container-contacts .contacts .contacts__links-info, .footer .footer__copyright .footer__copyright-text {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 15px;
+  letter-spacing: 0.846154px;
+  color: #ffffff;
+}
+
+.container-contacts .contacts .contacts__links-1 ul li, .container-contacts .contacts .contacts__links-2 ul li, .container-contacts .contacts .contacts__links-3 ul li {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 0.846154px;
+  color: #ffffff;
+}
+
+.container, .container-contacts .contacts {
   margin: 0 auto;
   max-width: 941px;
   width: 100%;
@@ -325,6 +345,7 @@ html {
   margin-left: 70px;
   margin-right: 0px;
   margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 .work__signup-flex .work__signup-area .work__signup--email input {
   width: 250px;
@@ -341,4 +362,66 @@ html {
   line-height: 18px;
   color: #ffffff;
   border: #FFFFFF;
+}
+
+.container-contacts {
+  margin: -21px auto;
+  width: 100%;
+  background-color: #141A20;
+}
+.container-contacts .contacts {
+  padding: 42px;
+  display: flex;
+}
+.container-contacts .contacts .contacts__logo-col .contacts__logo img {
+  width: 101px;
+  height: 23px;
+  padding: 10px 0 10px;
+}
+.container-contacts .contacts .contacts__logo-col .contacts__logo-text {
+  max-width: 250px;
+}
+.container-contacts .contacts .contacts__links-1 {
+  margin-top: 2px;
+}
+.container-contacts .contacts .contacts__links-1 ul {
+  list-style: none;
+}
+.container-contacts .contacts .contacts__links-2 {
+  margin-top: 17px;
+}
+.container-contacts .contacts .contacts__links-2 ul {
+  list-style: none;
+}
+.container-contacts .contacts .contacts__links-3 {
+  margin-top: 17px;
+}
+.container-contacts .contacts .contacts__links-3 ul {
+  list-style: none;
+}
+.container-contacts .contacts .contacts__links-info {
+  padding-left: 58px;
+  padding-right: 80px;
+}
+.container-contacts .contacts .contacts__link-sm {
+  padding: 22px 12.5px;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: none;
+  text-decoration-line: none;
+  text-decoration-style: initial;
+  text-decoration-color: initial;
+}
+
+.footer {
+  background-color: #171819;
+  min-height: 60px;
+}
+.footer .footer__copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
