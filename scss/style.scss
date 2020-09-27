@@ -612,9 +612,13 @@ a:-webkit-any-link {
     .capabilities__bottom-name{
       padding: 0px 10px 13px !important;
       font-size: 15px !important;
+      width: 200px !important;
     }
     .capabilities__bottom-text{
       padding: 0px 10px 13px !important;
+    }
+    .capabilities__bottom-box{
+      margin: 0px 0px !important;
     }
   }
   .container-git{
@@ -642,7 +646,4 @@ a:-webkit-any-link {
   .contacts__logo-text{
     padding-right: 0px;
   }
-}
-@media screen and (max-width: 375px){
-
 }
