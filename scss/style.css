@@ -144,13 +144,13 @@
 
 .header {
   width: 100%;
-  margin: 0 auto;
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  width: 100%;
 }
 
 html {
@@ -160,7 +160,7 @@ html {
 }
 
 .header {
-  height: 770px;
+  max-height: 770px;
   background-image: url(../img/bg__header.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -354,20 +354,20 @@ html {
 .work__signup-flex .work__signup-area .work__signup--blue-btn button {
   width: 150px;
   height: 37px;
-  background-color: #00A4E5;
+  background-color: #00a4e5;
   font-family: Open Sans;
   font-style: normal;
   font-weight: bold;
   font-size: 13px;
   line-height: 18px;
   color: #ffffff;
-  border: #FFFFFF;
+  border: #ffffff;
 }
 
 .container-contacts {
   margin: -21px auto;
   width: 100%;
-  background-color: #141A20;
+  background-color: #141a20;
 }
 .container-contacts .contacts {
   padding: 42px;
@@ -424,4 +424,192 @@ a:-webkit-any-link {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+  .container, .container-contacts .contacts {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+  }
+
+  .nav__logo {
+    padding-right: 0px !important;
+  }
+
+  .capabilities__bottom {
+    flex-direction: column;
+    margin: 0 250px;
+  }
+
+  .header {
+    max-height: 472px;
+  }
+  .header .header__title {
+    padding-top: 149px;
+    padding-bottom: 109px;
+    font-size: 16px;
+  }
+
+  .container-git {
+    height: 37vh;
+  }
+  .container-git .git .git__btn {
+    margin-left: 42%;
+  }
+
+  .contacts__links-sm {
+    display: flex;
+  }
+}
+@media screen and (max-width: 760px) {
+  .container, .container-contacts .contacts {
+    margin: 0 auto;
+    max-width: 680px;
+    width: 100%;
+  }
+
+  .contacts__links-sm {
+    display: block;
+  }
+}
+@media screen and (max-width: 630px) {
+  .container, .container-contacts .contacts {
+    margin: 0 auto;
+    max-width: 580px;
+    width: 100%;
+  }
+
+  .nav__menu-item {
+    padding: 25px 13px !important;
+  }
+
+  .story__inner {
+    display: block !important;
+    margin-left: 72px;
+  }
+
+  .capabilities__bottom {
+    margin: 0 150px;
+  }
+
+  .work__signup-title {
+    padding-left: 10px;
+    padding-top: 7px;
+  }
+
+  .work__signup-area {
+    margin-left: 0px;
+  }
+  .work__signup-area .work__signup--email input {
+    width: 150px !important;
+  }
+
+  .contacts {
+    display: block !important;
+    text-align: center;
+    padding: 15px 0px !important;
+  }
+
+  .contacts__logo-text {
+    max-width: 540px !important;
+  }
+
+  .contacts__logo-text {
+    padding-right: 50px;
+  }
+
+  .contacts__links-1 ul {
+    padding-inline-start: 0px;
+  }
+
+  .contacts__links-2 ul {
+    padding-inline-start: 0px;
+  }
+
+  .contacts__links-3 ul {
+    padding-inline-start: 0px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header {
+    max-height: 191px;
+  }
+  .header .header__logo {
+    padding-top: 15px;
+  }
+  .header .header__title {
+    padding-top: 25px;
+    padding-bottom: 10px;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 4.70937px;
+  }
+  .header .header__scroll-down {
+    font-size: 9px;
+  }
+
+  .nav__menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav__menu .nav__menu-item {
+    padding: 25px 40px !important;
+  }
+  .nav__menu .nav__logo {
+    padding-top: 20px;
+  }
+
+  .story__title {
+    padding-bottom: 30px !important;
+  }
+
+  .story__right {
+    display: block !important;
+    padding-left: 27px;
+    padding-top: 15px;
+  }
+  .story__right .story__right-manage {
+    margin: 0 0px !important;
+  }
+  .story__right .story__right-description {
+    padding-top: 30px;
+  }
+
+  .capabilities__top {
+    display: block !important;
+    max-height: none !important;
+    padding-left: 88px !important;
+  }
+
+  .capabilities__bottom {
+    margin: 0px 50px;
+  }
+
+  .container-git {
+    height: 14vh;
+  }
+  .container-git .git .git__title {
+    padding: 0px 0px !important;
+    font-size: 22px;
+    line-height: 25px;
+  }
+  .container-git .git .git__btn {
+    margin-left: 30%;
+    width: 130px;
+    height: 26px;
+    margin-top: 5px;
+  }
+
+  .work__signup-area {
+    display: block !important;
+    padding-right: 8px;
+  }
+  .work__signup-area .work__signup--email input {
+    width: 142px !important;
+  }
+
+  .contacts__logo-text {
+    padding-right: 0px;
+  }
 }
