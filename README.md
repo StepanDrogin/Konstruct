@@ -1,2 +1,2 @@
 # Konstruct
-My second project on githun with using bem and scss. Using with figma template.
+My second project on github with using bem and scss. Using with figma template.
